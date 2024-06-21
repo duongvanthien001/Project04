@@ -1,0 +1,29 @@
+﻿@model List<Project04.Models.ProductCategory>
+@{
+    ViewData["Title"] = "CategoryManagement";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h2>Bảng Hiển Thị Danh Mục Sản Phẩm</h2>
+<a asp-action="addnewcategory" class="btn btn-add">Thêm Mới Danh Mục Sản Phẩm</a>
+<table>
+    <thead>
+        <tr>
+            <th>Tên Danh Mục</th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody id="productTable">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <a asp-action="EditCategory" asp-route-categoryid="@item.Id">Sửa</a>
+                    <a asp-action="DeleteCategory" asp-route-categoryid="@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

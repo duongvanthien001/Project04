@@ -1,0 +1,41 @@
+﻿
+@model List<Project04.Models.Product>
+@{
+    ViewData["Title"] = "ProductManagement";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h2>Bảng Hiển Thị Sản Phẩm</h2>
+<a asp-action="addnewproduct"  class="btn btn-add">Thêm Mới Sản Phẩm</a>
+<table>
+    <thead>
+        <tr>
+            <th>Tên Sản Phẩm</th>
+            <th>Ảnh Sản Phẩm</th>
+            <th>Giá Sản Phẩm</th>
+            <th>Miêu Tả Sản Phẩm</th>
+            <th>Số Lượng Sản Phẩm</th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody id="productTable">
+        @foreach (var item in Model)
+        {
+
+        <tr>
+            <td>@item.Name</td>
+            <td><img src ="@Url.Content("../productsP4/"+item.ProductImages.First().Url)"></td>
+            <td>@item.Price $</td>
+            <td>@item.Description</td>
+            <td>@item.Quantity</td>
+            <td>
+                <button class="btn btn-edit">Sửa</button>
+                <button class="btn btn-delete">Xóa</button>
+            </td>
+        </tr>
+        }
+
+ 
+    </tbody>
+</table>
+

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutProduct.cshtml";
+}
+
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Product>
+<div class="all-box-new-product">
+    @foreach (var item in Model)
+    {
+
+        <div class="new-product-1">
+            <div class="pic-product-1">
+                <a asp-controller="Product" asp-action="ProductDetails" asp-route-productid="@item.Id">
+                    <img id="Pic-product-1" src="@Url.Content("../productsP4/"+item.ProductImages.First().Url)" alt="">
+                    <div class="box-icon-new-product">
+                        <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
+                        <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
+                        <i style="font-size: 18px;" id="search-Product" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="title-new-product">
+                <a asp-controller="Product" asp-action="ProductDetails" asp-route-productid="@item.Id">@item.Name</a>
+            </div>
+            <div style="font-size: 16px; color: rgb(170, 167, 167);">
+                @(item.Price)$
+            </div>
+        </div>
+
+
+
+    }
+
+</div>
+<div class="pagination">
+
+    @Html.PagedListPager(Model, page=>Url.Action("Index", new{page=page}))
+
+</div>

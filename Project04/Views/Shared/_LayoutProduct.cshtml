@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../Project4/css/main.css">
+    <link rel="stylesheet" href="../Project4/css/main-moblie.css">
+    <link rel="stylesheet" href="../Project4/css/Shop.css">
+    <title>Shop</title>
+</head>
+<div class="header">
+    <div class="content">
+        <div class="box-menu-mobile">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <nav class="box-menu">
+            <ul class="all-list-menu">
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                    <!-- <a href="">
+                        <i class="fa-solid fa-angle-down angle-down"></i>
+                    </a> -->
+                </li>
+                <li class="padding-list-menu">
+                    <a asp-controller="Product" asp-action="Index">Shop</a>
+                    <!-- <a href="">
+                        <i class="fa-solid fa-angle-down angle-down"></i>
+                    </a> -->
+                </li>
+                <li class="padding-list-menu">
+                    <a asp-controller="AboutUs" asp-action="Index">About Us</a>
+                    <!-- <a href="">
+                        <i class="fa-solid fa-angle-down angle-down"></i>
+                    </a> -->
+                </li>
+                <li class="padding-list-menu">
+                    <a asp-controller="Blog" asp-action="Index">Blog</a>
+                    <!-- <a href="">
+                        <i class="fa-solid fa-angle-down angle-down"></i>
+                    </a> -->
+                </li>
+
+            </ul>
+        </nav>
+        <div class="box-logo">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Project4/Picture/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="box-icon">
+            <a href="" class="box-search">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </a>
+            <a href="login.html" class="box-user">
+                <i class="fa-regular fa-user user"></i>
+            </a>
+            <a href="" class="box-heart">
+                <i class="fa-regular fa-heart heart"></i>
+            </a>
+            <a asp-controller="Cart" asp-action="Cart" class="box-cart">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box-banner-shop">
+    <div class="in-box-banner">
+        <div class="text-title-banner">
+            Shop
+        </div>
+        <div class="box-path">
+            <div>
+            </div>
+            <div class="icon">
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="box-list-product">
+            <div class="box-shop-product">
+                <a href="">
+                    <img src="../Project4/Picture/Shop/categories-19.jpg" alt="">
+                    <div class="name-product">
+                        <p>Armchairs</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box-shop-product">
+                <a href="">
+                    <img src="../Project4/Picture/Shop/categories-18.jpg" alt="">
+                    <div class="name-product">
+                        <p>Sofa</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box-shop-product">
+                <a href="">
+                    <img src="../Project4/Picture/Shop/categories-6.jpg" alt="">
+                    <div class="name-product">
+                        <p>Bed</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box-shop-product">
+                <a href="">
+                    <img src="../Project4/Picture/Shop/categories-10.jpg" alt="">
+                    <div class="name-product">
+                        <p>Lamp</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box-shop-product">
+                <a href="">
+                    <img src="../Project4/Picture/Shop/categories-10.jpg" alt="">
+                    <div class="name-product">
+                        <p>Bookshelves</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-shop">
+    <div class="box-sidebar">
+        @await Component.InvokeAsync("ViewCategory")
+
+
+    </div>
+    <div class="box-all-product">
+        <div class="header-product">
+            <div class="show-item">
+                <div></div>
+            </div>
+            <select name="" id="box-all-list">
+                <option value="">Default Sorting</option>
+                <option value="">Sort By Price: Low To High</option>
+                <option value="">Sort By Price: High To Low</option>
+            </select>
+        </div>
+        @RenderBody()
+    </div>
+</div>
+
+<div class="box-first-footer">
+    <div class="contact">
+        <h2>CONTACT US</h2>
+        <div class="in">
+            <div>Add :4 Copley Place, 7th Floor, Boston, MA 6</div>
+            <div>Tell : 866.453.4748</div>
+            <div>HR Fax: 810.222.5439</div>
+            <div>sales@funorifurniture.com</div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>CATEGOIRES</h2>
+        <div class="in">
+            <a href="">
+                <div>Furniture</div>
+            </a>
+            <a href="">
+                <div>Tables</div>
+            </a>
+            <a href="">
+                <div>Seating</div>
+            </a>
+            <a href="">
+                <div>Desks & office </div>
+            </a>
+            <a href="">
+                <div>Storage</div>
+            </a>
+            <a href="">
+                <div>Bed & Bath</div>
+            </a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>SERVICES</h2>
+        <div class="in">
+            <a href="">
+                <div>Sale</div>
+            </a>
+            <a href="">
+                <div>Quick Ship</div>
+            </a>
+            <a href="">
+                <div>New Designs</div>
+            </a>
+            <a href="">
+                <div>Accidental Fabric Protection</div>
+            </a>
+            <a href="">
+                <div>Furniture Care</div>
+            </a>
+            <a href="">
+                <div>Gift Cards</div>
+            </a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>JOIN US</h2>
+        <div class="in">
+            <div style="margin-bottom: 25px;">
+                Enter your email below to be the first to know
+                <br>
+                about new collections and product launches.
+            </div>
+            <div class="box-email">
+                <input type="text" placeholder="Email adress...">
+                <button type="submit">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+            <div class="icon-contact">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-second-footer">
+    <div class="first-box">
+        <div class="title">
+            Copyright © 2022. All Right Reserved
+        </div>
+    </div>
+    <div class="second-box">
+        <div class="box-bank">
+            <img src="../Project4/Picture/payments-1.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
+<script src="../Project4/js/main.js"></script>

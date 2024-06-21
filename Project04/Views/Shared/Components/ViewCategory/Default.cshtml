@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ProductCategory>
+<div class="first-sidebar">
+    <div class="title-sidebar">
+        Categories
+    </div>
+    @foreach(var item in Model)
+    {
+        <div class="in-sidebar">
+            <div class="name"><a asp-controller="Product" asp-action="ProductbyCategory" asp-route-categoryid="@item.Id">@item.Name</a></div>
+            <div class="box-number"></div>
+        </div>
+    }
+    
+
+</div>
