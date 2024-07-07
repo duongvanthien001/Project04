@@ -1,8 +1,15 @@
 // chuyển slide trong html
+<<<<<<< HEAD
 const img = [
     "/Project4/Picture/slider-4.jpg",
     "/Project4/Picture/slider-5.jpg",
     "/Project4/Picture/slider-6.jpg",
+=======
+var img = [
+    "Picture/slider-4.jpg",
+    "Picture/slider-5.jpg",
+    "Picture/slider-6.jpg",
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
 ];
 
 // them su kien vao nut chuyển slide 
@@ -109,7 +116,11 @@ setInterval(function() {
 }, 2000);
 
 /// chuyển đổi ảnh trong khi hover vào img product
+<<<<<<< HEAD
 const firstImg = document.getElementById('Pic-1');
+=======
+let firstImg = document.getElementById('Pic-1');
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
 
 firstImg.addEventListener('mouseover', function() {
     firstImg.src = "Picture/products-8-600x600.jpg";
@@ -120,7 +131,11 @@ firstImg.addEventListener('mouseout', function() {
 });
 // -----------------------------------------------
 
+<<<<<<< HEAD
 const firstImg_1 = document.getElementById('Pic-2');
+=======
+let firstImg_1 = document.getElementById('Pic-2');
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
 
 firstImg_1.addEventListener('mouseover', function() {
     firstImg_1.src = "Picture/img-16-600x600.jpg";

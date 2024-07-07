@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_LayoutProduct.cshtml";
@@ -39,3 +40,34 @@
     @Html.PagedListPager(Model, page=>Url.Action("Index", new{page=page}))
 
 </div>
+=======
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/_LayoutProducts.cshtml";
+}
+
+<div class="all-box-new-product">
+    <div class="new-product-1">
+        <div class="pic-product-1">
+            <a href="">
+                <img id="Pic-product-1" src="../Picture/Shop/products-10-1-600x600.jpg" alt="">
+                <div class="box-icon-new-product">
+                    <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
+                    <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
+                    <i style="font-size: 18px;" id="search-Product" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="title-new-product">
+            <a href="">About a Chair AAC 22 – Oak Base</a>
+        </div>
+        <div style="font-size: 16px; color: rgb(170, 167, 167);">
+            $250.0
+        </div>
+    </div>
+
+</div>
+
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb

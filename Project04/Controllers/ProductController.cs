@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 using Project04.Models;
 using X.PagedList;
@@ -34,6 +35,16 @@ namespace Project04.Controllers
         {
             var product = db.Products.Include(p => p.ProductImages).SingleOrDefault(p=>p.Id==productid);
             return View(product);
+=======
+
+namespace Project04.Controllers
+{
+    public class ProductController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
         }
     }
 }

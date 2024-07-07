@@ -1066,6 +1066,7 @@ html {
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 .product-detail {
     display: flex;
     gap: 20px;
@@ -1249,3 +1250,5 @@ html {
         background-color: #ddd;
     }
 
+=======
+>>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb

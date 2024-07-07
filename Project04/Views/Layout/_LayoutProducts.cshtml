@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/../Project4/css/all.min.css" />
-    <link rel="stylesheet" href="../Project4/css/main.css">
-    <link rel="stylesheet" href="../Project4/css/main-moblie.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/main-moblie.css">
+    <link rel="stylesheet" href="../Css/Shop.css">
+    <title>Shop</title>
 </head>
 <body>
     <div class="header">
@@ -20,57 +21,41 @@
             <nav class="box-menu">
                 <ul class="all-list-menu">
                     <li>
-<<<<<<< HEAD
-                        <a asp-controller="Home" asp-action="Index">Home</a>
-=======
-                        <a href="" class="hover-a">Home</a>
->>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
+                        <a href="../index.html" class="hover-a">Home</a>
                         <!-- <a href="">
                             <i class="fa-solid fa-angle-down angle-down"></i>
                         </a> -->
                     </li>
                     <li class="padding-list-menu">
-                        <a asp-controller="Product" asp-action="Index">Shop</a>
+                        <a href="Shop.html" class="hover-a">Shop</a>
                         <!-- <a href="">
                             <i class="fa-solid fa-angle-down angle-down"></i>
                         </a> -->
                     </li>
                     <li class="padding-list-menu">
-<<<<<<< HEAD
-                        <a asp-controller="AboutUs" asp-action="Index">About Us</a>
-=======
-                        <a href="Page/about.html" class="hover-a">About Us</a>
->>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
+                        <a href="about.html" class="hover-a">About Us</a>
                         <!-- <a href="">
                             <i class="fa-solid fa-angle-down angle-down"></i>
                         </a> -->
                     </li>
                     <li class="padding-list-menu">
-<<<<<<< HEAD
-                        <a asp-controller="Blog" asp-action="Index">Blog</a>
-=======
-                        <a href="Page/blog.html" class="hover-a">Blog</a>
->>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
+                        <a href="blog.html" class="hover-a">Blog</a>
                         <!-- <a href="">
                             <i class="fa-solid fa-angle-down angle-down"></i>
                         </a> -->
                     </li>
-<<<<<<< HEAD
-                    
-=======
                     <li class="padding-list-menu">
                         <a href="" class="hover-a">Page</a>
                         <a href="">
                             <i class="fa-solid fa-angle-down angle-down"></i>
                         </a>
                     </li>
->>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
                 </ul>
             </nav>
             <div class="box-logo">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="../Project4/Picture/logo.png" alt="">
+                    <a href="../index.html">
+                        <img src="../Picture/logo.png" alt="">
                     </a>
                 </div>
             </div>
@@ -78,23 +63,133 @@
                 <a href="" class="box-search">
                     <i class="fa-solid fa-magnifying-glass search"></i>
                 </a>
-                <a href="Page/login.html" class="box-user">
+                <a href="login.html" class="box-user">
                     <i class="fa-regular fa-user user"></i>
                 </a>
                 <a href="" class="box-heart">
                     <i class="fa-regular fa-heart heart"></i>
                 </a>
-<<<<<<< HEAD
-                <a asp-controller="Cart" asp-action="Cart" class="box-cart">
-=======
                 <a href="" class="box-cart">
->>>>>>> 1ff16e3bdf148423009bcb4ac30ea88e2ebf31cb
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
         </div>
     </div>
-    @RenderBody()
+    <div class="box-banner-shop">
+        <div class="in-box-banner">
+            <div class="text-title-banner">
+                Shop
+            </div>
+            <div class="box-path">
+                <div>
+                   
+                </div>
+                <div class="icon">
+                   
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+            <div class="box-list-product">
+                <div class="box-shop-product">
+                    <a href="">
+                        <img src="../Picture/Shop/categories-19.jpg" alt="">
+                        <div class="name-product">
+                            <p>Armchairs</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shop-product">
+                    <a href="">
+                        <img src="../Picture/Shop/categories-18.jpg" alt="">
+                        <div class="name-product">
+                            <p>Sofa</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shop-product">
+                    <a href="">
+                        <img src="../Picture/Shop/categories-6.jpg" alt="">
+                        <div class="name-product">
+                            <p>Bed</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shop-product">
+                    <a href="">
+                        <img src="../Picture/Shop/categories-10.jpg" alt="">
+                        <div class="name-product">
+                            <p>Lamp</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shop-product">
+                    <a href="">
+                        <img src="../Picture/Shop/categories-10.jpg" alt="">
+                        <div class="name-product">
+                            <p>Bookshelves</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-shop">
+        <div class="box-sidebar">
+            <div class="first-sidebar">
+                <div class="title-sidebar">
+                    Categories
+                </div>
+                <div class="in-sidebar">
+                    <div class="name">Armchairs</div>
+                    <div class="box-number">1</div>
+                </div>
+                <div class="in-sidebar">
+                    <div class="name">Bedroom</div>
+                    <div class="box-number">9</div>
+                </div>
+                <div class="in-sidebar">
+                    <div class="name">Light Bulb</div>
+                    <div class="box-number">5</div>
+                </div>
+                <div class="in-sidebar">
+                    <div class="name">Lighting</div>
+                    <div class="box-number">1</div>
+                </div>
+                <div class="in-sidebar">
+                    <div class="name">Living Room</div>
+                    <div class="box-number">6</div>
+                </div>
+                
+            </div>
+            <div class="box-price">
+                <div class="price-title">Price</div>
+                <input type="range" name="" id="">
+                <div class="box-range">
+                    Range:
+                    <span>$50</span>
+                    <span>-</span>
+                    <span>$500</span>
+                </div>
+            </div>
+           
+        </div>
+        <div class="box-all-product">
+            <div class="header-product">
+                <div class="show-item">
+                    <div></div>
+                </div>
+                <select name="" id="box-all-list">
+                    <option value="">Default Sorting</option>
+                    <option value="">Sort By Price: Low To High</option>
+                    <option value="">Sort By Price: High To Low</option>
+                </select>
+            </div>
+            @RenderBody()
+            
+        </div>
+    </div>
     <!-- Phần footer -->
     <div class="box-first-footer">
         <div class="contact">
@@ -155,8 +250,7 @@
         <div class="contact">
             <h2>JOIN US</h2>
             <div class="in">
-                <div style="margin-bottom: 25px;">
-                    Enter your email below to be the first to know
+                <div style="margin-bottom: 25px;">Enter your email below to be the first to know 
                     <br>
                     about new collections and product launches.
                 </div>
@@ -187,7 +281,7 @@
                             <a href="">
                                 <i class="fa-brands fa-behance"></i>
                             </a>
-                        </li>
+                        </li>                     
                     </ul>
                 </div>
             </div>
@@ -201,12 +295,11 @@
         </div>
         <div class="second-box">
             <div class="box-bank">
-                <img src="../Project4/Picture/payments-1.png" alt="">
+                <img src="../Picture/payments-1.png" alt="">
             </div>
         </div>
     </div>
-    <!-- <div style="margin-bottom: 600px;"></div> -->
 </body>
 </html>
 <script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
-<script src="../Project4/js/main.js"></script>
+<script src="js/main.js"></script>
